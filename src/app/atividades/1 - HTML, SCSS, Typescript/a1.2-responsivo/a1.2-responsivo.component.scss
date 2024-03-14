@@ -1,0 +1,40 @@
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  flex-shrink: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background-color: black;
+}
+
+@media (width > 1000px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    row-gap: 0px !important
+  }
+}
+
+@media (width <= 1000px) {
+  .wrapper{
+    display: grid;    
+    grid-template-columns: repeat(1, 0fr);
+  }
+}

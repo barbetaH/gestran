@@ -1,0 +1,15 @@
+$back_groud_color_black: black;
+$border_color_1: blue;
+$border_color_2: red;
+
+.wrapper {
+  border: 1px solid $border_color_1;
+  .item {
+    border: 1px solid $border_color_2;
+    width: 100px;
+    height: 100px;
+  }
+  :nth-child(even) {
+    background-color: $back_groud_color_black;
+  }
+}

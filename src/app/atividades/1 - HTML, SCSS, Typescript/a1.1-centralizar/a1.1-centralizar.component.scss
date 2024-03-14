@@ -1,0 +1,35 @@
+/*Implementação Display: Flex */
+.wrapper {
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  border: 1px solid blue;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}
+
+/*Implementação Display: Absolute */
+// .wrapper {
+//   height: 100%;
+//   box-sizing: border-box;
+//   position: relative;
+//   display: flex;
+//   border: 1px solid blue;  
+
+//   .box {
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
